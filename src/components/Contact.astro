@@ -1,0 +1,39 @@
+---
+import XIcon from '../components/icons/x.astro'
+import GithubIcon from '../components/icons/github.astro'
+import LinkedInIcon from '../components/icons/linkedIn.astro'
+import MailIcon from '../components/icons/mail.astro'
+import ContactIcon from '../components/icons/ContactIcon.astro'
+---
+
+<h3 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-[65px]">
+    <ContactIcon class="size-14"/>
+    Contáctame
+</h3>
+
+<!-- Contenido -->
+<div class="grid md:grid-cols-2 md:gap-6">
+    <div class="lg:w-[300px]">
+        <p class="pb-[30px]">
+            “Because the people who are crazy enough
+            to think they can change the world, are the ones who do.”
+        </p>
+        <p>
+            - Steve Jobs
+        </p>
+    </div>
+    <div class="w-full lg:w-[740px] mx-auto grid md:grid-cols-4 md:gap-6 items-center">
+        <a href="https://twitter.com/Joe388M">
+            <XIcon class="size-[50px] hover:scale-150 transition"/>
+        </a>
+        <a href="https://github.com/JoeSs27">
+            <GithubIcon class="size-[50px] hover:scale-150 transition" />
+        </a>
+        <a href="https://www.linkedin.com/in/joe-salazar">
+            <LinkedInIcon class="size-[50px] hover:scale-150 transition" />
+        </a>
+        <a href="mailto:joesalazar388@gmail.com">
+            <MailIcon class="size-[50px] hover:scale-150 transition" />
+        </a>
+    </div>
+</div>

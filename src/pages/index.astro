@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Badge from '../components/Badge.astro';
+import SocialPill from '../components/SocialPill.astro';
+import LinkedInIcon from '../components/icons/linkedIn.astro';
+import GithubIcon from '../components/icons/github.astro';
+import MailIcon from '../components/icons/mail.astro';
+import CodeIcon from '../components/icons/Code.astro';
+import Briefcase from '../components/icons/Briefcase.astro';
+import Experience from '../components/Experience.astro';
+import SobreMi from '../components/About-me.astro';
+import Contact from '../components/Contact.astro';
+import Components from '../components/icons/Components.astro';
+import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<Layout title="Portfolio de Joe - Desarrollador y Programador Web/Movil">
+	<main class="w-full">
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<h1 class="text-white text-3xl font-bold flex flex-row gap-x-4 pb-3">
+				Hey! Me llamo
+				<h2 class="text-white text-7xl font-bold flex flex-row  pb-4">
+					Joe Salazar
+					<a href="https://www.linkedin.com/in/joe-salazar-soto-64834b26a"
+					target="_blank"
+					rel="noopener" 
+					class="flex justify-center items-center">
+						<Badge>Disponible para trabajar</Badge>
+				</a>
+				</h2> 
+			</h1>
+			<h2 class="text-xl text-wrap">
+				<span> 1 año de experiencia.</span>
+				<span class="text-yellow-200/90">Desarrollador Web y Desarrollador Movil.</span>
+				<span class="text-red-200/90">De Lima, Perú 📍</span>.
+				Especializado en crear aplicaciones únicas
+			</h2>
+
+			<nav class="flex gap-x-4 mt-8">
+				<!-- LinkedIn -->
+				<SocialPill href="https://www.linkedin.com/in/joe-salazar">
+					<LinkedInIcon class="size-6" />
+					LinkedIn
+				</SocialPill>
+
+				<!-- Github -->
+				<SocialPill href="https://github.com/JoeSs27">
+					<GithubIcon class="size-6" />
+					Github
+				</SocialPill>
+
+				<!-- Gmail -->
+				<SocialPill href="mailto:joesalazar388@gmail.com">
+					<MailIcon class="size-6" />
+					Gmail
+				</SocialPill>
+			</nav>
+		</section>
+
+		<!-- Sobre Mi -->
+		<section id="sobre-mi" class="w-full lg:w-[1120px] py-44 mx-auto">
+			<SobreMi />
+		</section>
+
+		<!-- Skills -->
+		<section class="w-full lg:w-[1120px] py-10 mx-auto">
+			<h3 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-[65px]">
+				<Components class="size-14"/>
+				Skills
+			</h3>
+
+
+
+		</section>
+
+		<!-- Proyectos -->
+		<section id="proyectos" class="w-full lg:w-[1120px] py-10 mx-auto">
+			<h3 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-14">
+				<CodeIcon class="size-14" />
+				Proyectos
+			</h3>
+			<div class="w-full lg:w-[740px] mx-44">
+				<Projects />
+			</div>
+
+		</section>
+
+		<!-- Experiencia -->
+		<section class="w-full lg:w-[1120px] py-10 mx-auto">
+			<h3 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-16">
+				<Briefcase class="size-14"/>
+				Experiencia
+			</h3>
+			<div class="w-full lg:w-[740px] mx-44">
+				<Experience />
+			</div>			
+		</section>
+
+		<!-- Contáctame -->
+		<section id="contactame" class="w-full lg:w-[1120px] py-10 mx-auto">
+			<Contact />
+		</section>
+
+		<!-- Footer -->
+		<Footer />
+	</main>
+</Layout>
+
